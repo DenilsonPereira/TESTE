@@ -28,7 +28,7 @@ h1, h2, h3 {
 /* Button Styles */
 #btn-discover {
     background-image: linear-gradient(to right, #596ef0 0%, #27e0fc 51%, #27e0fc 100%);
-    padding: 10px 25px;
+    padding: 10px 35px;
     text-align: center;
     font-size: 1.2rem;
     transition: 0.5s;
@@ -76,7 +76,7 @@ nav a:hover{
 
 #btn-signup {
     background: transparent;
-    padding: .4rem 1.3rem;
+    padding: .3rem 1.3rem;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
@@ -94,9 +94,16 @@ nav a:hover{
 #login {
     color: var(--color-text);
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 #login:hover{
     font-size: 1.1rem;
+}
+#login-icon{
+    max-width: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 /* First Section Styles */
