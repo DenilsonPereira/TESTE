@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Global Styles */
+:root {
+    --bg-color: #ffffff; /* background color */
+    --nav-color: #75738a; /* navigation bar color */
+    --color-p: #b1afc3; /* Paragraph color */
+    --color-text: #5712a6; /* Headings color */
+    --blue: #3b8aff;    /* Blue color */
+}
+
+p {
+    color: var(--color-p);
+}
+
+h1, h2, h3 {
+    color: var(--color-text);
+}
+
+/* Button Styles */
+#btn-discover {
+    background-image: linear-gradient(to right, #596ef0 0%, #27e0fc 51%, #27e0fc 100%);
+    padding: 10px 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--bg-color);
+    border-radius: 5px;
+    border: none;
+    display: block;
+}
+
+#btn-discover:hover {
+    background-position: right center;
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 500;
+    margin: 3rem 0;
+}
+
+nav > ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+nav a:hover{
+    color: var(--color-text);
+    font-size: 1.1rem;
+}
+
+#logo {
+    width: 150px;
+}
+
+#btn-signup {
+    background: transparent;
+    padding: .4rem 1.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: .4rem;
+}
+
+#btn-signup:hover{
+    transition: all .3s ease-in;
+    background-color: var(--blue);
+    color: var(--bg-color);
+}
+
+#login {
+    color: var(--color-text);
+    cursor: pointer;
+}
+#login:hover{
+    font-size: 1.1rem;
+}
+
+/* First Section Styles */
+.first {
+    display: flex;
+    height: 100vh;
+    background-image: url(../images/img-banner-teste-programador.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-bottom: 100px;
+}
+
+.first-text {
+    margin: 3rem 0 0 9rem;
+}
+
+.first-text h1 {
+    font-size: 3rem;
+}
+
+.first-text p {
+    margin: 3rem 0;
+}
+
+/* Second Section Styles */
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 8rem;
+}
+
+.second > img {
+    margin: 0 0 1.5rem -10.5rem;
+    width: 7rem;
+    height: 10px;
+    animation: slide 2s infinite alternate;
+}
+
+.second h2 {
+    font-size: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width:15%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.card img{
+    width: 90%;
+}
+
+.card h3 {
+    margin: 2rem 0;
+}
+
+/* Third Section Styles */
+.third {
+    height: 100vh;
+    background-image: url(../images/img-fundo-teste-programador.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin: -50px 0 0 0;
+}
+
+.third-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content:end;
+    align-items:center;
+    padding-bottom: 15rem;
+    margin-left: 550px;
+}
+
+.third p {
+    font-size: 1.2rem;
+}
+
+.third img {
+    align-self:start;
+    margin-left: 170px;
+    margin-bottom: 100px;
+    width: 110px;
+    height: 10px;
+    animation: slide 2s infinite alternate;
+}
+
+/* Fourth Section Styles */
+.four {
+    height: 100vh;
+    background-image: url(../images/img-fundo-2-teste-programador.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: contain;
+    margin: -140px 0 120px 0;
+}
+
+.four-text {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 0 15rem 10rem;
+    padding-top: 25rem;
+}
+
+.four-text h2 {
+    padding-bottom: 5rem;
+}
+
+.four-text p {
+    font-size: 1.2rem;
+}
+
+.four-text img {
+    margin-bottom: 80px;
+    width: 110px;
+    animation: slide 2s infinite alternate;
+}
+
+.four-text #here {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.four-text #here::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 3.5px;
+    background: url(../images/linha-reta-teste-programador.png.jpg);
+    background-size: cover;
+}
+
+.four-link {
+    color: var(--blue);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+/* Fifth Section Styles */
+.five {
+    height: 110vh;
+    width: 100%;
+    background-image: url(../images/img-fundo-4-teste-programador.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%;
+    margin-bottom: 150px;
+}
+
+.five-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-top: 10rem;
+    margin-left: 25rem;
+}
+
+.five-text #five-img {
+    filter: grayscale(46%) sepia(45%) brightness(181%) saturate(0%) contrast(472%);
+    -webkit-filter: grayscale(46%) sepia(45%) brightness(181%) saturate(0%) contrast(472%);
+    -moz-filter: grayscale(46%) sepia(45%) brightness(181%) saturate(0%) contrast(472%);
+    margin: 25px 0 70px -325px;
+    width: 100px;
+    height: 10px;
+    animation: slide 2s infinite alternate;
+}
+
+.five-text-img {
+    display: inline-block;
+    margin-left: -3rem;
+}
+
+.play {
+    padding-top: 2rem;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* Sixth Section Styles */
+.six {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+}
+
+.six-content {
+    display: flex;
+}
+
+.six h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.arrow {
+    height: 65px;
+    margin: .8rem 0 0 3rem;
+}
+
+.line {
+    margin-top: 2rem;
+    width: 120px;
+    animation: slide 2s infinite alternate;
+}
+
+/* Footer Styles */
+footer {
+    height: 100vh;
+    background-image: url(../images/fundo-footer-teste-programador.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+}
+
+footer img {
+    filter: brightness(100);
+    width: 120px;
+}
+
+footer ul {
+    list-style: none;
+    color: var(--bg-color);
+}
+
+footer ul>li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+footer ul>li:hover{
+        color: var(--color-p);
+}
+
+footer p {
+    color: var(--bg-color);
+    margin-top: 1rem;
+    cursor: pointer;
+}
+footer p:hover{
+    color: var(--color-p);
+}
+
+footer h3 {
+    color: var(--bg-color);
+    margin-bottom: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+    color: var(--bg-color);
+    cursor: pointer;
+}
+i:hover{
+    color: var(--color-p);
+    font-size: 1.5rem;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ffffff;
+    margin-top: 4rem;
+}
+
+.footer-end p {
+    padding-top: 1rem;
+}
+
+.pulse-element {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px); 
+    }
+}
+
+
+/* telas grandes (992px a 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .first {
+        background-size: 50%;
+    }
+    .third img {
+        margin-left: 0px;
+    }
+    .five-text #five-img{
+        margin-top: 8rem;
+    }
+}
+
+/* telas médias (768px a 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .first {
+        background-size: 50%;
+    }
+    .third img {
+        margin-left: 0px;
+    }
+    .five-text #five-img{
+        margin-top: 8rem;
+    }
+}
+
+/* telas pequenas (até 767px) */
+@media only screen and (max-width: 767px) {
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+
+    .menu ul:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .first {
+        background: var(--bg-color);
+    }
+    .third{
+        margin-top: 15rem;
+    }
+    .third-content {
+        display: flex;
+        justify-content:flex-start;
+        align-items:start;
+        padding-bottom: 15rem;
+        margin-left: 200px;
+    }
+    .third img {
+        margin-left: 0px;
+    }
+    .four{
+        margin-bottom: 0;
+    }
+    .five {
+        height: 70vh;
+        background-size: 100%;
+        margin-bottom: 100px;
+    }
+    
+    .five-text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        font-size: .7rem;
+        margin-left: 12rem;
+    }
+    
+    .five-text-img {
+        display: inline-block;
+        margin-left: -.5rem;
+    }
+    
+    .play {
+        padding-top: 2rem;
+        width: 100px;
+    }
+}
