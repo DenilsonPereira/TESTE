@@ -309,6 +309,7 @@ nav a:hover{
 
 .six-content {
     display: flex;
+    cursor: pointer;
 }
 
 .six h3 {
@@ -511,5 +512,23 @@ hr {
     .play {
         padding-top: 2rem;
         width: 100px;
+    }
+    .footer-content{
+        margin-top: -70px;
+        margin-left: -100px;
+        gap:  3rem;
+    }
+    .footer-end{
+        width: 75vw;
+        flex-direction: row;
+        margin-top: -20px;
+        margin-left: -90px;
+    }
+    hr{
+        margin-left: -100px;
+        width: 400px;
+    }
+    .icons{
+        gap: .5rem;
     }
 }
