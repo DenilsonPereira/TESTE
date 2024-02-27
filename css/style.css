@@ -434,6 +434,19 @@ hr {
     }
 }
 
+/* telas pequenas (de 1200px pra cima) */
+@media only screen and (min-width: 1200px) {
+    .first{
+        margin-bottom: 1rem;
+    }
+    .second{
+        margin-bottom: 1rem;
+    }
+    .five-text {
+        padding-top: 15rem;
+    }
+}
+
 
 /* telas grandes (992px a 1199px) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
